@@ -6,7 +6,7 @@ import asyncio
 # from random import randint
 
 
-load_dotenv(dotenv_path=f"/Users/frigi/Documents/bot_discord/ishigaming/config")
+load_dotenv(dotenv_path="/media/enzo/3D1C-9390/bots_discord/ishigaming/config")
 
 intents = Intents.all()
 bot = commands.Bot(command_prefix='i!', help_command=None, intents=intents)
