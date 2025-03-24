@@ -54,7 +54,7 @@ def contain_list(phrase: list,word: str) -> bool:
 async def on_ready():
     print("ishigaming bot")
     await bot.get_channel(1133014961203982377).send('Bot allumé')
-    await bot.change_presence(activity=Activity(name='Made by kuzaseto#3371',type=ActivityType.LISTENING))
+    await bot.change_presence(activity=Activity(name='Made by kuzaseto3371',type=ActivityType.LISTENING))
 
 # S'exécute lorsqu'un message est envoyé
 @listen()
@@ -227,4 +227,4 @@ async def on_member_remove(member):
 
 
 # bot.start(os.getenv('TOKEN'))
-bot.start(open("/media/enzo/3D1C-9390/bots_discord/ishigaming_bot/config").readline().replace("\n",""))
+bot.start(open("/path/to/token/file").readline().replace("\n",""))
