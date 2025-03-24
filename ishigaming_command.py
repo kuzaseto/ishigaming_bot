@@ -6,7 +6,7 @@ import asyncio
 from random import randint
 import praw
 
-load_dotenv(dotenv_path="/media/enzo/3D1C-9390/bots_discord/ishigaming/config")
+load_dotenv(dotenv_path="/path/to/token/file")
 
 intents = Intents.all()
 bot = commands.Bot(command_prefix='i!', help_command=None, intents=intents)
@@ -193,9 +193,9 @@ async def delete_error(ctx,error):
 
 
 
-reddit = praw.Reddit(client_id='D0mDA-0QfOAXodqd9HanXw',
-                     client_secret='zGxZIA7SKMHV5PGtpS3vFv3-wJ7w2w',
-                     user_agent='u/god_staline')
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
+                     user_agent='')
 
 @bot.command(name='meme')
 async def meme(ctx,sub:str = None):
