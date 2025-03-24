@@ -189,9 +189,9 @@ async def temprole_function(ctx: SlashContext, member: Member, role: Role, temps
 async def clear_function(ctx: SlashContext, nombre:int):
     await ctx.channel.purge(deletion_limit=nombre, reason=f'Command clear by {ctx.author.display_name}')
 
-reddit = praw.Reddit(client_id='D0mDA-0QfOAXodqd9HanXw',
-                     client_secret='zGxZIA7SKMHV5PGtpS3vFv3-wJ7w2w',
-                     user_agent='u/god_staline',
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
+                     user_agent='',
                      check_for_async=False)
 
 @slash_command(name='meme', description='Cherche un meme récent au hasard sur reddit')
